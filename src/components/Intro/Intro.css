@@ -1,0 +1,260 @@
+.Intro{
+  height: 100vh;
+  flex-flow: wrap;
+}
+
+.i-left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+/* animation style of p */
+
+
+.typing-slider {
+  font-family: Consolas, monospace;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.typing-slider p {
+  position: relative;
+  display: inline;
+  font-size: 0;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  overflow-wrap: break-word;
+  animation: slide 21s step-start infinite;
+}
+
+
+@keyframes slide {
+  33.3333333333% {
+    font-size: 3rem;
+    letter-spacing: .3rem;
+  }
+  to {
+    font-size: 0;
+    letter-spacing: 0;
+  }
+}
+
+.typing-slider p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-left: .3rem solid white;
+  background-color: var(--bck);
+  animation: typing 7s infinite, cursor 1s infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+@keyframes typing {
+  from {
+    width: 100%;
+  }
+  90%,
+  to {
+    width: 0;
+  }
+}
+
+.typing-slider p:nth-child(1) {
+  animation-delay: 3s;
+}
+.typing-slider p:nth-child(1)::after {
+  animation-delay: 3s;
+  animation-timing-function: steps(31), step-end;
+}
+
+.typing-slider p:nth-child(2) {
+  animation-delay: 10s;
+}
+.typing-slider p:nth-child(2)::after {
+  animation-delay: 10s;
+  animation-timing-function: steps(32), step-end;
+}
+
+.typing-slider p:nth-child(3) {
+  animation-delay: 17s;
+}
+.typing-slider p:nth-child(3)::after {
+  animation-delay: 17s;
+  animation-timing-function: steps(22), step-end;
+}
+
+/* h1 slider animation */
+
+h1 {
+  background-color: var(--bck);
+  color: white;
+  font-size: 7rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-decoration: none;
+  margin: 0;padding: 0;
+}
+
+
+
+.i-decor{
+  height: .5rem;
+  width: 0rem;
+  margin-top: -1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1.5rem .1rem #15ae43ca;
+  background-color: var(--green);
+  animation: a1 2s linear 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes a1{
+  100%{
+    width: 17rem;
+  }
+}
+
+h2{
+  color: var(--green);
+}
+
+.i-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.i-icon{
+  color: rgba(255, 255, 255, 50%);
+  font-size: 4rem;
+  cursor: pointer;
+}
+.i-icon:hover{
+  color: var(--green);
+}
+
+.i-right{
+  display: flex;
+  align-items: center;
+}
+
+.i-dev{
+  font-size: 12rem;
+  transform:rotate(.25turn);
+  opacity: 10%;
+  margin-left: auto;
+}
+
+
+
+.i-btn{
+  background-color: var(--bck);
+  color: white;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  border: .2rem solid var(--green);
+}
+
+.i-btn:hover, .i-btn:focus{
+  color: black;
+  background-color: var(--green);
+  box-shadow: 0 0 2rem .05rem var(--green);
+}
+
+.i-right>img:nth-child(1){
+    transform: scale(.6);
+    animation: pop1 4s ease-in-out infinite;
+}
+
+@keyframes pop1{
+  50%{
+    transform: scale(.61) translateY(-2%);
+  }
+}
+
+.i-right>img:nth-child(2){
+  position: absolute;
+  transform: rotateY(45deg) scale(.1) skew(30deg);
+  top: -35rem;
+  margin-left: -47%;
+  animation: pop2 2s ease-in-out infinite;
+}
+
+@keyframes pop2{
+  50%{
+    transform: rotateY(45deg) scale(.11) skew(30deg);
+  }
+}
+
+.i-right>img:nth-child(3){
+  position: absolute;
+  transform: scale(.6);
+  margin-left: 20%;
+  animation: pop3 5s ease-in-out infinite;
+}
+
+@keyframes pop3{
+  50%{
+    transform: scale(.6) rotate(10deg);
+  }
+}
+
+.i-right>img:nth-child(4){
+  position: absolute;
+  width: 30rem;
+  height: 17rem;
+  transform: rotateY(45deg) skew(30deg);
+  margin-left: -6%;
+  animation: pop4 5s ease-in-out infinite;
+}
+
+@keyframes pop4{
+  50%{
+    transform: rotateY(45deg) skew(30deg) scale(.95);
+  }
+}
+
+@media only screen and (max-width: 90rem){
+  .i-right>img{
+    display: none;
+  }
+
+  h1{
+    font-size: 6rem;
+  }
+
+  @keyframes slide {
+    33.3333333333% {
+      font-size: 1.8rem;
+      letter-spacing: .3rem;
+    }
+    to {
+      font-size: 0;
+      letter-spacing: 0;
+    }
+  }
+
+  @keyframes a1{
+    100%{
+      width: 9.5rem;
+    }
+  }
+
+  .i-dev{
+    font-size: 5rem;
+    margin-top: -20rem;
+  }
+}
+

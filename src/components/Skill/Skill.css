@@ -1,0 +1,56 @@
+.s-design>img{
+    max-width: 100%;
+    max-height: 100%;
+    padding-bottom: 20rem;
+}
+
+.skill{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.s-lang{
+    margin-top: 2rem;
+}
+
+.s-head{
+    color: var(--green);
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.s-lang p:nth-child(1){
+    color: white;
+    font-size: 2rem;
+}
+
+.s-img{
+    display: flex;
+    flex-flow: wrap;
+}
+.s-img>*{
+    transform: scale(.5);
+    margin-left: -3rem;
+}
+
+@media only screen and (max-width: 60rem){
+    .skill{
+        gap: 0;
+    }
+    .s-lang{
+        margin-top: 0;
+    }
+    #skil{
+        flex-direction: column;
+        padding-left: 1rem;
+    }
+    .s-design>img{
+        padding-bottom: 0rem;
+    }
+    .s-design{
+        height: fit-content;
+    }
+
+}

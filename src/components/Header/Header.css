@@ -1,0 +1,182 @@
+.Header {
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 6%;
+  background-color: transparent;
+  backdrop-filter: blur(.2rem);
+  box-shadow: 0 0 .5rem .3rem #0001;
+  position: fixed;
+  z-index: 999;
+  /* transform: translateX(4.17%); */
+}
+
+.h-logo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: .3rem solid #fff;
+  box-shadow: 0 0 .5rem .1rem #fff;
+}
+
+.threeLines {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  padding: 0;
+  margin: 1rem;
+  cursor: pointer;
+  transition: all 600ms ease;
+  transform: scale(0.7);
+  z-index: 999;
+}
+.threeLines .el {
+  cursor: pointer;
+  width: 4rem;
+  padding: 0;
+  height: .3rem;
+  background: white;
+  box-shadow: 0 0 0 transparent;
+  border: 0 transparent;
+  text-indent: -99.9rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -.1rem;
+  -webkit-appearance: none;
+  line-height: 0;
+  transition: all 300ms ease;
+  border-radius: 9.9rem;
+}
+.threeLines .el:active,
+.threeLines .el:focus {
+  outline: 0;
+  border: 0;
+}
+.threeLines .el::after,
+.threeLines .el::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  height: .3rem;
+  background: white;
+  width: 100%;
+  transition: all 300ms ease;
+  border-radius: 9.9rem;
+}
+.threeLines .el::after {
+  top: -1.5rem;
+}
+.threeLines .el::before {
+  bottom: -1.5rem;
+  left: auto;
+  right: 0;
+}
+.threeLines.active {
+  transform: rotate(360deg) scale(0.7);
+}
+.threeLines.active .el {
+  background: transparent;
+}
+.threeLines.active .el:after {
+  transform: rotate(-135deg) translate(-1rem, -1rem) scale(1.2, 1.2);
+}
+.threeLines.active .el:before {
+  transform: rotate(135deg) translate(-1rem, 1rem) scale(1.2, 1.2);
+}
+
+.react-audio-player{
+  color: red;
+}
+
+/* audio bars */
+
+.bars {
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+  border-radius: 50%;
+  gap: .1rem;
+  transition: background-color .6s;
+}
+
+.bars:hover{
+  background-color: white;
+}
+
+
+.bar {
+ background-color: var(--green);
+  bottom: .1rem;
+  height: .3rem;
+  width: .3rem;      
+}
+
+.bars:hover>*{
+  background-color: black;
+}
+
+.start{
+  animation: sound 0s linear -.8s infinite alternate;
+}
+
+@keyframes sound {
+  0% {
+     opacity: .35;
+      height: .3rem; 
+  }
+  100% {
+      opacity: 1;       
+      height: 2.8rem;        
+  }
+}
+
+.bar:nth-child(1)  { left: 1px; animation-duration: 474ms; }
+.bar:nth-child(2)  { left: 5px; animation-duration: 433ms; }
+.bar:nth-child(3)  { left: 9px; animation-duration: 407ms; }
+.bar:nth-child(4)  { left: 13px; animation-duration: 458ms; }
+.bar:nth-child(5)  { left: 17px; animation-duration: 400ms; }
+.bar:nth-child(6)  { left: 21px; animation-duration: 425ms; }
+.bar:nth-child(7)  { left: 25px; animation-duration: 391ms; }
+
+
+
+.overlay {
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  height: 100%;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+p{
+  color: white;
+  }
+
+p:hover,p:focus{
+  color: var(--green);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}

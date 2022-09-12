@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+:root {
+  --bck: #090a0a;
+  /* --green: #15ae43; */
+  --green: rgb(1, 182, 54);
+  --color-red: #ec1840;
+  --color-purple: #7a18ec;
+  --color-white: #fff;
+  --color-black-1: #111;
+  --color-black-2: #222;
+  --color-black-3: #444;
+  --speed-normal: 0.5s;
+  --speed-fast: 0.8s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loader{
+  /* text-align: center; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  font-size: 4rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+html{
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+body {
+  background-color: var(--bck);
+  margin: 0;
+  padding: 0;
+  cursor: none;
+  font-family: 'Roboto';
+}
+
+
+::-webkit-scrollbar {
+  width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: .5rem;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--green); 
+  border-radius: .5rem;
+}
+
+::selection {
+  color: black;
+  background: var(--green);
+}
+
+
+
+
+/* The progress container (grey background) */
+.progress-container {
+  position: fixed;
+  top: 0rem;
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
+
+@media only screen and (max-width:48rem){
+  html{
+    font-size: 50%;
   }
 }
+
+
+

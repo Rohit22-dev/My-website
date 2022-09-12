@@ -1,0 +1,48 @@
+span{
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.347);
+    text-transform: uppercase;
+}
+
+.interest{
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    overflow-x: hidden;
+}
+
+.line-1{
+    position: relative;
+    /* margin-top: 35%; */
+    left: -200rem;
+    white-space: nowrap;
+}
+
+.line-2{
+    position: relative;
+    /* margin-top: 55%; */
+    right: -200rem;
+    white-space: nowrap;
+}
+
+.i-main{
+    font-size: 3.6rem;
+    text-align: center;
+    display: inline-block;
+    background-clip: text;
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.i-main:hover{
+    color: white;
+}
+
+@media only screen and (max-width: 60rem){
+    .interest{
+        height: 100vh;
+    }
+}

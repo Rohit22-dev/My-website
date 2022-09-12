@@ -1,0 +1,132 @@
+.foot{
+    height: 60vh;
+    background-color: #4cd137;
+}
+
+.container{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    overflow: hidden;
+}
+
+.f-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-top: 2rem;
+  }
+  .f-icon{
+    color: #000;
+    font-size: 2.8rem;
+    cursor: pointer;
+  }
+  .f-icon:hover{
+    color: var(--green);
+  }
+
+  .btn {
+    cursor: pointer;
+    position: relative;
+    background: rgb(12, 98, 26);
+    color: rgba(255, 255, 255, 0.782);
+    font-size: 1.5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    z-index: 1;
+    transition: all 1s;
+  }
+  .btn:after, .btn:before {
+    content: " ";
+    width: 1rem;
+    height:1rem;
+    position: absolute;
+    transition: all 1s;
+  }
+  .btn:after {
+    top: -.1rem;
+    left: -.1rem;
+    border-top: .3rem solid black;
+    border-left: .3rem solid black;
+  }
+  .btn:before {
+    bottom: -.1rem;
+    right: -.1rem;
+    border-bottom: .3rem solid black;
+    border-right: .3rem solid black;
+  }
+  .btn:hover {
+    background-color: black;
+    color: white;
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+  }
+  .btn:hover:before, .btn:hover:after {
+    width: 9.3rem;
+    height: 3.6rem;
+  }
+
+  h3{
+    z-index: 1;
+    color: black;
+  }
+  h4{
+    margin-top: 2rem;
+    z-index: 1;
+  }
+
+  .heart{
+    color: rgb(169, 1, 12);
+    animation: pulse 1s infinite;
+  }
+
+  @keyframes pulse{
+    50%{
+    color: rgb(246, 0, 41);
+    }
+  }
+
+.boder-box{
+  height: 60vh;
+  width: 98vw;
+  position: absolute;
+  /* box-sizing: border-box; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .border1{
+    /* position: absolute; */
+    /* left: 0; */
+    /* border-right: 42rem solid transparent; */
+    /* border-bottom: 42rem solid var(--green); */
+  }
+
+  .border2{
+    height: 100%;
+    width: 100%;
+    background-color: var(--green);
+    transform: skewY(145deg);
+  }
+
+.bik{
+  position: absolute;
+  transform: scale(.4);
+  left: 0;
+  z-index: 999;
+  margin-top: 25vh;
+  align-items: baseline;
+  /* animation: mov 25s linear infinite; */
+}
+
+@keyframes mov{
+  100%{
+    left: 79%;
+    transform: scale(.4) translateX(100%);  }
+}

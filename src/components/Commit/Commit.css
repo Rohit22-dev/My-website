@@ -1,0 +1,19 @@
+.comit{
+    height: 100vh;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.c-data>*:hover{
+    color: white;
+}
+
+@media only screen and (max-width: 90rem){
+    .comit{
+        font-size: 4rem;
+    }
+}

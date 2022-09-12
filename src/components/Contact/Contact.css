@@ -1,0 +1,85 @@
+.c-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.c-left {
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+}
+
+.c-left p:nth-child(1) {
+  color: var(--green);
+  font-size: 5rem;
+  -webkit-text-fill-color: var(--bck);
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: var(--green);
+}
+
+.c-left p:nth-child(2) {
+  color: white;
+  font-size: 2rem;
+}
+
+.c-right {
+  margin: 2rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  /* border: .05rem solid var(--green); */
+  border-radius: 2rem;
+  box-shadow: 0.3rem 0.3rem 1rem 0.1rem var(--green),
+    0.1rem.1rem 0.3rem 0.1rem var(--green);
+}
+
+.c-right > form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.c-user {
+  background-color: var(--bck);
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--green);
+  font-size: 1.3rem;
+  max-width: 100%;
+  padding: 0.3rem 1rem;
+}
+
+.c-btn {
+  max-width: 8rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: var(--bck);
+  border: none;
+  font-size: 1.5rem;
+  box-shadow: 0 0 1rem 0.05rem var(--green);
+  border: 0.2rem solid var(--green);
+}
+
+.c-btn:hover {
+  color: black;
+  background-color: var(--green);
+  box-shadow: 0 0 1rem 0.5rem var(--green);
+}
+
+::placeholder {
+  color: #3d6f4c;
+}
+
+@media only screen and (max-width: 60rem) {
+  .c-form {
+    flex-direction: column;
+  }
+  .c-left,
+  .c-right {
+    width: 80%;
+    /* height: 100%; */
+  }
+}
