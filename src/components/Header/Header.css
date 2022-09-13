@@ -87,10 +87,6 @@
   transform: rotate(135deg) translate(-1rem, 1rem) scale(1.2, 1.2);
 }
 
-.react-audio-player{
-  color: red;
-}
-
 /* audio bars */
 
 .bars {
@@ -179,4 +175,15 @@ p:hover,p:focus{
 
 a {
   text-decoration: none;
+}
+
+.popover-header{
+  color: white;
+  background-color: rgb(70, 104, 70);
+  font-size: 1.5rem;
+}
+.popover-body{
+  color: white;
+  background-color: var(--green);
+  font-size: 1rem;
 }

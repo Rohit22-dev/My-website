@@ -1,12 +1,16 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import "./Header.css";
 import song from "../../Night-in-Venice.mp3";
 import { Link } from "react-scroll";
+import axios from "axios";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Popover from "react-bootstrap/Popover";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const [isPlaying, setIsplaying] = useState(false);
-  
+  const [facts, setFacts] = useState("");
+
   const myRef = useRef();
 
   const handlePlay = () => {
@@ -23,6 +27,28 @@ const Header = () => {
   };
 
   const x = isPlaying ? "bar start" : "bar";
+
+  const fact = async () => {
+    await axios
+      .get("https://api.api-ninjas.com/v1/facts?limit=1", {
+        headers: {
+          "X-Api-Key": "EpGaTDmfVkPlCthUtz/2+A==daO8XNlOCyZ8bOkU",
+        },
+      })
+      .then((res) => {
+        setFacts(res.data[0].fact)
+      });
+  };
+  useEffect(() => {
+    fact();
+  }, []);
+
+  const popover = (
+    <Popover id="popover-basic">
+      <Popover.Header as="h3">Fact time 😁</Popover.Header>
+      <Popover.Body>{facts}</Popover.Body>
+    </Popover>
+  );
 
   return (
     <>
@@ -46,7 +72,9 @@ const Header = () => {
       </div>
       <div className="Header col-12">
         <div className="h-left">
-          <div className="h-logo"></div>
+          <OverlayTrigger trigger="click" placement="right" overlay={popover}>
+            <div className="h-logo"> </div>
+          </OverlayTrigger>
         </div>
 
         <div className="h-right d-flex align-items-center justify-content-center">

@@ -13,12 +13,12 @@
     "react": "^18.2.0",
     "react-animated-cursor": "^2.5.1",
     "react-audio-player": "^0.17.0",
+    "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.7",
     "react-spinners": "^0.13.4",
-    "sass": "^1.54.8",
     "use-sound": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
