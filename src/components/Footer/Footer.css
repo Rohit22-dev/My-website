@@ -27,7 +27,7 @@
     cursor: pointer;
   }
   .f-icon:hover{
-    color: var(--green);
+    color: white;
   }
 
   .btn {
@@ -101,12 +101,6 @@
   justify-content: center;
   align-items: center;
 }
-  .border1{
-    /* position: absolute; */
-    /* left: 0; */
-    /* border-right: 42rem solid transparent; */
-    /* border-bottom: 42rem solid var(--green); */
-  }
 
   .border2{
     height: 100%;

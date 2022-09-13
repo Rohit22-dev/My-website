@@ -1,0 +1,22 @@
+.work {
+  height: 120vh;
+  /* width: 50vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: rgba(0, 0, 0, 0.226);
+}
+
+h1 {
+  color: var(--green);
+}
+
+.work > img {
+  max-height: 70%;
+  max-width: 70%;
+  border-radius: 2rem;
+  transform: rotateY(25deg) rotateX(25deg);
+  box-shadow: -0.5rem 0.5rem 0 0.5rem rgb(255, 50, 50);
+}

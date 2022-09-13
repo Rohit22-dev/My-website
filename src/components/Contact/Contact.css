@@ -10,7 +10,7 @@
 .c-left {
   display: flex;
   flex-direction: column;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .c-left p:nth-child(1) {
@@ -43,6 +43,7 @@
 }
 
 .c-user {
+    color: var(--green);
   background-color: var(--bck);
   border-radius: 0.5rem;
   border: 0.2rem solid var(--green);
@@ -72,6 +73,7 @@
 ::placeholder {
   color: #3d6f4c;
 }
+
 
 @media only screen and (max-width: 60rem) {
   .c-form {

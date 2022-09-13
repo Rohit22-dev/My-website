@@ -6,7 +6,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { AiFillHeart } from "react-icons/ai";
 import { Link } from "react-scroll";
-import bike from "../../img/bike.gif";
+
 
 const Footer = () => {
   return (
@@ -40,9 +40,7 @@ const Footer = () => {
         <h4>
           Developed with <AiFillHeart className="heart" /> by Rohit Kumar
         </h4>
-        {/* <img src={bike} alt="" className="bik" /> */}
         <div className="boder-box" >
-          {/* <div className="border1"></div> */}
           <div className="border2"></div>
         </div>
       </div>

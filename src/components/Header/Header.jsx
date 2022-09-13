@@ -6,6 +6,7 @@ import { Link } from "react-scroll";
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const [isPlaying, setIsplaying] = useState(false);
+  
   const myRef = useRef();
 
   const handlePlay = () => {
