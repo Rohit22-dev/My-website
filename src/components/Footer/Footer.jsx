@@ -3,7 +3,6 @@ import "./Footer.css";
 import { FiGithub } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
-import { AiOutlineInstagram } from "react-icons/ai";
 import { AiFillHeart } from "react-icons/ai";
 import { Link } from "react-scroll";
 
@@ -31,7 +30,6 @@ const Footer = () => {
           <a href="mailto:rkkeepscode@gmail.com">
             <HiOutlineMail className="f-icon" />
           </a>
-          <AiOutlineInstagram className="f-icon" />
         </div>
 
         <Link activeClass="active" to="cont" smooth={true} spy={true}>

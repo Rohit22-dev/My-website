@@ -3,7 +3,6 @@ import "./Intro.css";
 import { FiGithub } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
-import { AiOutlineInstagram } from "react-icons/ai";
 import { Link } from "react-scroll";
 import pic1 from "../../img/pic1.png";
 import pic2 from "../../img/pic2.png";
@@ -42,7 +41,6 @@ const Intro = () => {
           <a href="mailto:rkkeepscode@gmail.com">
             <HiOutlineMail className="i-icon" />
           </a>
-          <AiOutlineInstagram className="i-icon" />
         </div>
 
         <Link activeClass="active" to="cont" smooth={true} spy={true}>
