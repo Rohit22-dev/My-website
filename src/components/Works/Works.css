@@ -27,6 +27,7 @@ h1 {
   box-shadow: 0 0 1rem 0.05rem red;
   padding: .2rem;
   border-radius: .5rem;
+  margin-top: 1rem;
 }
 .w-arrow{
   position: absolute;
@@ -42,9 +43,17 @@ h1 {
 }
 
 .work > img {
-  max-height: 50%;
-  max-width: 50%;
+  max-height: 60%;
+  max-width: 60%;
   border-radius: 2rem;
   transform: rotateY(25deg) rotateX(25deg);
   box-shadow: -0.5rem 0.5rem 0rem 0.5rem rgb(255, 50, 50);
+}
+
+
+@media only screen and (max-width: 60rem){
+  .work > img {
+    max-height: 90%;
+    max-width: 90%;
+  }
 }
