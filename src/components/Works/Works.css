@@ -5,18 +5,46 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 5rem;
+  gap: 1rem;
   background-color: rgba(0, 0, 0, 0.226);
 }
 
 h1 {
   color: var(--green);
+  background-color: transparent;
+}
+
+.work>span{
+  color: red;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.w-btn{
+  color: red;
+  background: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 0 1rem 0.05rem red;
+  padding: .2rem;
+  border-radius: .5rem;
+}
+.w-arrow{
+  position: absolute;
+  margin-left: .5rem;
+  font-size: 2rem;
+  animation: run 2s linear infinite;
+}
+
+@keyframes run{
+  50%{
+    margin-left: 1rem;
+  }
 }
 
 .work > img {
-  max-height: 70%;
-  max-width: 70%;
+  max-height: 50%;
+  max-width: 50%;
   border-radius: 2rem;
   transform: rotateY(25deg) rotateX(25deg);
-  box-shadow: -0.5rem 0.5rem 0 0.5rem rgb(255, 50, 50);
+  box-shadow: -0.5rem 0.5rem 0rem 0.5rem rgb(255, 50, 50);
 }
