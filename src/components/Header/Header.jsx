@@ -36,7 +36,7 @@ const Header = () => {
         },
       })
       .then((res) => {
-        setFacts(res.data[0].fact)
+        setFacts(res.data[0].fact);
       });
   };
   useEffect(() => {

@@ -38,7 +38,11 @@ const Intro = () => {
           >
             <FiLinkedin className="i-icon" />
           </a>
-          <a href="mailto:rkkeepscode@gmail.com">
+          <a
+            href="https://mail.google.com/mail/?view=cm&source=mailto&to=rkkeepscode@gmail.com&body=Body&su=Subject"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <HiOutlineMail className="i-icon" />
           </a>
         </div>
