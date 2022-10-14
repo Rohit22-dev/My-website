@@ -1,4 +1,4 @@
-.work {
+.project {
   height: 120vh;
   /* width: 50vw; */
   display: flex;
@@ -14,12 +14,12 @@ h1 {
   background-color: transparent;
 }
 
-.work>span{
+.project>span{
   color: red;
   font-weight: 800;
   font-size: 2rem;
 }
-.w-btn{
+.p-btn{
   color: red;
   background: transparent;
   font-size: 1.5rem;
@@ -29,7 +29,7 @@ h1 {
   border-radius: .5rem;
   margin-top: 1rem;
 }
-.w-arrow{
+.p-arrow{
   position: absolute;
   margin-left: .5rem;
   font-size: 2rem;
@@ -42,7 +42,7 @@ h1 {
   }
 }
 
-.work > img {
+.project > img {
   max-height: 60%;
   max-width: 60%;
   border-radius: 2rem;
@@ -52,7 +52,7 @@ h1 {
 
 
 @media only screen and (max-width: 60rem){
-  .work > img {
+  .project > img {
     max-height: 90%;
     max-width: 90%;
   }

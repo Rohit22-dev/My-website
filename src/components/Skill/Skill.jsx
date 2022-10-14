@@ -16,6 +16,7 @@ import imongo from "../../img/i-mongo.png";
 import inode from "../../img/i-node.png";
 import igit from "../../img/i-git.png";
 import lap from "../../img/lap.png";
+import inext from "../../img/i-next.png"
 import Aos from "aos";
 
 const Skill = () => {
@@ -49,6 +50,7 @@ const Skill = () => {
               <img src={ireact} alt="" />
               <img src={iboot} alt="" />
               <img src={itail} alt="" />
+            <img src={inext} alt="" />
             </div>
           </div>
 

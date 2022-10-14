@@ -6,11 +6,12 @@ import Header from "./components/Header/Header";
 import Interest from "./components/Interest/Interest";
 import Intro from "./components/Intro/Intro";
 import Skill from "./components/Skill/Skill";
-import Works from "./components/Works/Works";
 import PacmanLoader from "react-spinners/PacmanLoader";
 import AnimatedCursor from "react-animated-cursor";
 import Commit from "./components/Commit/Commit";
 import "aos/dist/aos.css";
+import Projects from "./components/Projects/Projects";
+import Experience from "./components/Experience/Experience";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -35,7 +36,8 @@ function App() {
           <Commit />
           <Skill />
           <Interest />
-          <Works />
+          <Experience />
+          <Projects />
           <Contact />
           <Footer />
           <AnimatedCursor

@@ -64,7 +64,10 @@ const Header = () => {
           <Link activeClass="active" to="skil" smooth={true} spy={true}>
             <p onClick={handleClick}>Skills</p>
           </Link>
-          <p onClick={handleClick}>Work</p>
+          <Link activeClass="active" to="exp" smooth={true} spy={true}>
+            <p onClick={handleClick}>Experience</p>
+          </Link>
+          <p onClick={handleClick}>Project</p>
           <Link activeClass="active" to="cont" smooth={true} spy={true}>
             <p onClick={handleClick}>Contact</p>
           </Link>
