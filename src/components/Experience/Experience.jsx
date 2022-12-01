@@ -10,7 +10,7 @@ const Experience = () => {
           <b>Job Type:  </b> Internship
         </span>
         <span>
-          <b>Period:  </b> October 2022 - Present
+          <b>Period:  </b> Sep 2022 - Nov 2022
         </span>
         <span>
           <b>Role:  </b>Web Development Product Manager

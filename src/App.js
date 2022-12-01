@@ -6,7 +6,7 @@ import Header from "./components/Header/Header";
 import Interest from "./components/Interest/Interest";
 import Intro from "./components/Intro/Intro";
 import Skill from "./components/Skill/Skill";
-import PacmanLoader from "react-spinners/PacmanLoader";
+import GridLoader from "react-spinners/GridLoader";
 import AnimatedCursor from "react-animated-cursor";
 import Commit from "./components/Commit/Commit";
 import "aos/dist/aos.css";
@@ -27,7 +27,7 @@ function App() {
     <>
       {loading ? (
         <div className="loader">
-          <PacmanLoader color={"var(--green"} loading={loading} />
+          <GridLoader color={"var(--green"} loading={loading} size={40} />
         </div>
       ) : (
         <div className="App">

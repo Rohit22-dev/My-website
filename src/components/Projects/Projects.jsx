@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 import work1 from "../../img/work-1.png";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import project_data from "../project_data";
 
 const Projects = () => {
   return (

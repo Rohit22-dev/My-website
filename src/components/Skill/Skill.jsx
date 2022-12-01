@@ -17,6 +17,7 @@ import inode from "../../img/i-node.png";
 import igit from "../../img/i-git.png";
 import lap from "../../img/lap.png";
 import inext from "../../img/i-next.png"
+import idocker1 from "../../img/i-docker1.png"
 import Aos from "aos";
 
 const Skill = () => {
@@ -68,6 +69,7 @@ const Skill = () => {
               <div className="s-img">
                 <img src={inode} alt="" />
                 <img src={igit} alt="" />
+                <img src={idocker1} alt="" />
               </div>
             </div>
           </div>
